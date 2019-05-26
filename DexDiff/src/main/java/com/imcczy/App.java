@@ -24,6 +24,7 @@ import org.jf.dexlib2.iface.MultiDexContainer;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -34,7 +35,10 @@ import java.util.stream.Collectors;
 public class App {
 
     public enum MODE {
-        MERGE_DEX, DIFF;
+        STRIP, DIFF, SEARCH
+    }
+    public enum SIG_MODE {
+        SIMPLE,FULL
     }
 
     public static void main(String[] args) {
@@ -49,40 +53,25 @@ public class App {
         }
         AppHandler appHandler;
         switch (OPTIONS.instance.getMode()) {
-            case DIFF:
+            case SEARCH:
                 appHandler = new AppHandler(OPTIONS.instance.getOldApkPath(), OPTIONS.instance.getNewAPKPath());
                 appHandler.init();
                 appHandler.lookupMethod();
                 System.out.println("\nTTTTTTTTT" + TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - t0));
                 break;
-            case MERGE_DEX:
-                test2();
+            case STRIP:
+                appHandler = new AppHandler(OPTIONS.instance.getNewAPKPath());
+                appHandler.stripAndMergeDex();
+                break;
+            case DIFF:
+                appHandler = new AppHandler(OPTIONS.instance.getOldApkPath(), OPTIONS.instance.getNewAPKPath());
+                appHandler.init();
+                appHandler.diff();
                 break;
             default:
                 break;
         }
 
-    }
-
-    public static void test2() {
-        List<String> filters = new ArrayList<>();
-        filters.add("Lcom/MobileTicket");
-        filters.add("Lcom/alipay");
-        List<String> in = new ArrayList<>();
-        try {
-            MultiDexContainer<? extends DexBackedDexFile> multiDex = DexFileFactory.loadDexContainer(OPTIONS.instance.getNewAPKPath().toFile(), null);
-
-            for (String dexEntry : multiDex.getDexEntryNames()) {
-                DexFile file =DexFileFactory.loadDexEntry(OPTIONS.instance.getNewAPKPath().toFile(),
-                        dexEntry, true, Opcodes.forApi(DexFileModule.AUTO_INFER_API_LEVEL));
-                if (DexFileFactory.writeDexFile(dexEntry,file,filters))
-                    in.add(dexEntry);
-            }
-
-            DexMerger.main2("test.dex",in);
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
     }
 
     public static void test() {
@@ -127,13 +116,18 @@ public class App {
             return false;
         }
 
-        OPTIONS.instance.setMode(MODE.valueOf(configuration.getString("mode")));
+        OPTIONS.instance.setMode(MODE.valueOf(configuration.getString("mode").toUpperCase()));
         OPTIONS.instance.setPathToAndroidJar(configuration.getString("AndroidJarPath"));
         OPTIONS.instance.setNewAPKPath(configuration.getString("ApkPath"));
         if (MODE.DIFF == OPTIONS.instance.getMode()) {
             OPTIONS.instance.setOldApkPath(configuration.getString("oldApkPath"));
             OPTIONS.instance.setSigs(configuration.getString("signature").split(","));
+            OPTIONS.instance.setSig_mode(SIG_MODE.valueOf(configuration.getString("SigMode").toUpperCase()));
         }
+
+        OPTIONS.instance.setFilters(Arrays.asList(configuration.getString("Filters").split(",")));
+
+
 
         return OPTIONS.instance.init();
     }

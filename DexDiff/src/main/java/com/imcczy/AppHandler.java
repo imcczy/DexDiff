@@ -1,5 +1,6 @@
 package com.imcczy;
 
+import com.android.dx.merge.DexMerger;
 import com.ibm.wala.classLoader.IClass;
 import com.ibm.wala.dalvik.classLoader.DexFileModule;
 import com.ibm.wala.dalvik.classLoader.DexIClass;
@@ -11,12 +12,15 @@ import com.imcczy.utils.OPTIONS;
 import org.jf.dexlib2.DexFileFactory;
 import org.jf.dexlib2.Opcodes;
 import org.jf.dexlib2.dexbacked.DexBackedDexFile;
+import org.jf.dexlib2.iface.DexFile;
 import org.jf.dexlib2.iface.MultiDexContainer;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -49,11 +53,6 @@ public class AppHandler {
 
     public Collection<IClass> parseDex(Path path) {
         System.out.println(path.getFileName());
-//        boolean isAPK = path.getFileName().endsWith("apk");
-//        if (!isAPK) {
-//            System.out.println("ERROR: must be apk file !!!");
-//            return null;
-//        }
 
         ArrayList<IClass> classes = new ArrayList<>();
 
@@ -61,7 +60,7 @@ public class AppHandler {
             MultiDexContainer<? extends DexBackedDexFile> multiDex = DexFileFactory.loadDexContainer(path.toFile(), null);
 
             for (String dexEntry : multiDex.getDexEntryNames()) {
-                classes.addAll(new DexFileModule(path.toFile(), dexEntry, DexFileModule.AUTO_INFER_API_LEVEL)
+                classes.addAll(new DexFileModule(path.toFile(), dexEntry, DexFileModule.AUTO_INFER_API_LEVEL, OPTIONS.instance.getFilters())
                         .getEntrysCollection()
                         .stream()
                         .map(moduleEntry -> new DexIClass(ClassLoaderReference.Application, OPTIONS.instance.getCha(), (DexModuleEntry) moduleEntry))
@@ -106,4 +105,49 @@ public class AppHandler {
         });
         return flag[0];
     }
+
+    public void stripAndMergeDex() {
+
+        List<String> in = new ArrayList<>();
+        try {
+            MultiDexContainer<? extends DexBackedDexFile> multiDex = DexFileFactory.loadDexContainer(newApk.toFile(), null);
+
+            for (String dexEntry : multiDex.getDexEntryNames()) {
+                DexFile file = DexFileFactory.loadDexEntry(newApk.toFile(),
+                        dexEntry, true, Opcodes.forApi(DexFileModule.AUTO_INFER_API_LEVEL));
+                if (DexFileFactory.writeDexFile(dexEntry, file, OPTIONS.instance.getFilters()))
+                    in.add(dexEntry);
+            }
+
+            DexMerger.main2("test.dex", in);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+
+    public void diff() {
+        Double[] count = {0.0};
+        Map<String, MethodNode> s,l;
+        if (newTree.methodNodeMap.size() > oldTree.methodNodeMap.size()){
+            s = oldTree.methodNodeMap;
+            l = newTree.methodNodeMap;
+        }else {
+            l = oldTree.methodNodeMap;
+            s = newTree.methodNodeMap;
+        }
+        s.forEach((k, n) -> {
+            if (l.containsKey(k)) {
+                if (n.equals(l.get(k))) {
+                    count[0]++;
+                }else {
+                    System.out.println("sig not equal: "+k);
+                }
+            }else {
+                System.out.println("not found sig: "+k);
+            }
+        });
+
+        System.out.println(count[0]/newTree.methodNodeMap.size());
+    }
+
 }

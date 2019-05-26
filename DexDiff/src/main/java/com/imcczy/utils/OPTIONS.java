@@ -21,7 +21,9 @@ public enum OPTIONS {
     private Path oldApkPath;
     private Path newAPKPath;
     private App.MODE mode;
+    private App.SIG_MODE sig_mode;
     private String[] sigs;
+    private List<String> filters;
     public boolean init(){
         boolean flag = false;
         try {
@@ -86,5 +88,21 @@ public enum OPTIONS {
 
     public void setMode(App.MODE mode) {
         this.mode = mode;
+    }
+
+    public List<String> getFilters() {
+        return filters;
+    }
+
+    public void setFilters(List<String> filters) {
+        this.filters = filters;
+    }
+
+    public App.SIG_MODE getSig_mode() {
+        return sig_mode;
+    }
+
+    public void setSig_mode(App.SIG_MODE sig_mode) {
+        this.sig_mode = sig_mode;
     }
 }

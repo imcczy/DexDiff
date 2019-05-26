@@ -9,18 +9,18 @@ import com.ibm.wala.types.ClassLoaderReference;
 import com.ibm.wala.types.Descriptor;
 
 import com.ibm.wala.types.TypeReference;
+import com.imcczy.App;
 import com.imcczy.hashtree.HashTree;
 import com.imcczy.hashtree.TreeConfig;
 import com.imcczy.hashtree.node.MethodNode;
+import com.imcczy.utils.OPTIONS;
 import com.imcczy.utils.Utils;
 import com.imcczy.utils.WalaUtils;
+import jdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 
 public class SignatureMethodNodeComp implements IMethodNodeComp {
@@ -34,11 +34,15 @@ public class SignatureMethodNodeComp implements IMethodNodeComp {
         if (desc == null)
             desc = getFuzzyDescriptor(m);
         sb.append(desc);
-        getSimple(sb, (DexIMethod) m);
+        if (App.SIG_MODE.FULL == OPTIONS.instance.getSig_mode())
+            getFullDescriptor(sb, (DexIMethod) m);
+        else
+            getSimple(sb, (DexIMethod) m);
         String fulldesc = sb.toString();
 
         String signature = config.keepMethodSignatures ? m.getSignature() : "";
-        return new MethodNode(config.getHasher().putBytes(fulldesc.getBytes()).hash().asBytes(), config.getHasher().putBytes(desc.getBytes()).hash().asBytes(), signature);
+        return new MethodNode(config.getHasher().putBytes(fulldesc.getBytes()).hash().asBytes(),
+                config.getHasher().putBytes(desc.getBytes()).hash().asBytes(), signature,fulldesc);
     }
 
 
@@ -192,12 +196,12 @@ public class SignatureMethodNodeComp implements IMethodNodeComp {
             final String customTypeReplacement = "X";
             StringBuilder stringBuilder = new StringBuilder("(");
             for (String type : invoke.describerList) {
-                TypeReference t = TypeReference.findOrCreate(ClassLoaderReference.Application, type.replace(";",""));
+                TypeReference t = TypeReference.findOrCreate(ClassLoaderReference.Application, type.replace(";", ""));
                 IClass ct = null;
                 if (t != null && !t.getClassLoader().equals(ClassLoaderReference.Primordial)) {
                     ct = m.getClassHierarchy().lookupClass(t);
                     stringBuilder.append(ct == null ? customTypeReplacement : type);
-                }else {
+                } else {
                     stringBuilder.append(type);
                 }
             }
@@ -212,7 +216,7 @@ public class SignatureMethodNodeComp implements IMethodNodeComp {
     private static void getSimple(StringBuilder sb, DexIMethod m) {
         Instruction[] instructions = m.getInstructions();
         Set<String> set = new TreeSet<>();
-        if (instructions == null){
+        if (instructions == null) {
             return;
         }
         for (Instruction instruction : instructions) {
@@ -224,22 +228,19 @@ public class SignatureMethodNodeComp implements IMethodNodeComp {
         sb.append(set.toString());
     }
 
-    private static String getFullDescriptor(IMethod m) {
+    private static void getFullDescriptor(StringBuilder sb, DexIMethod m) {
         if (!(m instanceof DexIMethod)) {
-            return null;
+            return;
         }
-
-        DexIMethod dexIMethod = (DexIMethod) m;
-        StringBuilder sb = new StringBuilder();
-        Instruction[] instructions = dexIMethod.getDexInstructions();
+        List<String> set = new ArrayList<>();
+        Instruction[] instructions = m.getDexInstructions();
         if (instructions != null) {
             for (Instruction instruction : instructions) {
-                if (instruction instanceof Invoke) {
-
-                }
+                set.add(instruction.getOpcode().name);
             }
         }
-        return null;
+        sb.append(set.toString());
+
     }
 
 }

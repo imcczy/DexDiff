@@ -1,7 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d082348b-a9c2-49b2-9eef-bd371391a969" name="Default Changelist" comment="" />
+    <list default="true" id="d082348b-a9c2-49b2-9eef-bd371391a969" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/classes2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/classes3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/com.ibm.wala.dalvik/com/ibm/wala/dalvik/classLoader/DexFileModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/com.ibm.wala.dalvik/com/ibm/wala/dalvik/classLoader/DexFileModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/com.ibm.wala.dalvik/com/ibm/wala/dalvik/util/AndroidAnalysisScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/com.ibm.wala.dalvik/com/ibm/wala/dalvik/util/AndroidAnalysisScope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imcczy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imcczy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/DexIndexOverflowException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/EncodedValueCodec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/Leb128.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/Mutf8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/SizeOf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/util/ByteArrayByteInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/util/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dex/util/Unsigned.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttAnnotationDefault.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttBootstrapMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttConstantValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttDeprecated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttEnclosingMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttInnerClasses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttLineNumberTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttLocalVariableTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttLocalVariableTypeTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttRuntimeInvisibleAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttRuntimeInvisibleParameterAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttRuntimeVisibleAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttRuntimeVisibleParameterAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttSourceDebugExtension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttSourceFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/AttSynthetic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/BaseLocalVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/BaseParameterAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/InnerClassList$Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/InnerClassList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/attrib/RawAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BaseMachine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BasicBlocker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ByteBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ByteBlockList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ByteOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BytecodeArray$BaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BytecodeArray$ConstantParserVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BytecodeArray$Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/BytecodeArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ConcreteMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ExecutionStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Frame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/LineNumberList$Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/LineNumberList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/LocalVariableList$Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/LocalVariableList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Machine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Merger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ReturnAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$CatchInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$ExceptionHandlerSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$ExceptionSetupLabelAllocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$LabelAllocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$Subroutine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper$SubroutineInliner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Ropper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/RopperMachine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/SimException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Simulator$SimVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/Simulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/SwitchList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/code/ValueAwareMachine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/cst/MethodHandleKind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/AnnotationParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/AttributeListParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener$Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener$FileNameFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/ClassPathOpener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/CodeObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/FieldListParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/MemberListParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/MethodListParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/direct/StdAttributeFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/ParseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/StdField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/StdFieldList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/StdMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/StdMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/cf/iface/StdMethodList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/UsageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$Arguments$ArgumentsParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$Arguments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$BestEffortMainDexListFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$ClassDefItemConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$ClassParserTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$ClassTranslatorTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$DexWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$DirectClassFileConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$FileBytesConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$MainDexListFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$NotFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$RemoveModuleInfoFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main$StopProcessing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dexer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/Args.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/BaseDumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/BlockDumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/ClassDumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/DotDumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/dump/SsaDumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/findusages/FindUsages$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/findusages/FindUsages$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/findusages/FindUsages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/findusages/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/grep/Grep$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/grep/Grep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/command/grep/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/cf/AttributeTranslator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/cf/CfTranslator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/cf/CfTranslator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/ArrayData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/BlockAddresses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/Dops.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/HighRegisterPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/LocalSnapshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/LocalStart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/OddSpacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/OutputCollector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/RopToDop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/RopTranslator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/RopTranslator$LocalVariableAwareTranslationVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/RopTranslator$TranslationVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/RopTranslator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/StdCatchBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/SwitchData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/VariableSizeInsn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form10t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form10x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form11n.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form11x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form12x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form21c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form21h.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form21s.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form21t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form22b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form22c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form22s.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form22t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form23x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form30t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form31c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form31i.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form31t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form32x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form35c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form3rc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form45cc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form4rcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/Form51l.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/code/form/SpecialFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/file/AnnotationUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/file/DebugInfoDecoder$LocalEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/file/DebugInfoDecoder$PositionEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/file/DebugInfoDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/dex/file/MapItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/OpcodeInfo$Info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/OpcodeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/Opcodes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/AddressMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/BaseCodeCursor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/FillArrayDataPayloadDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/FourRegisterDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/InvokePolymorphicDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/OneRegisterDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/PackedSwitchPayloadDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/RegisterRangeDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/ShortArrayCodeInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/ShortArrayCodeOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/SparseSwitchPayloadDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/ThreeRegisterDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/TwoRegisterDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/io/instructions/ZeroRegisterDecodedInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/AccessFlags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/ConservativeTranslationAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/DexTranslationAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/Exceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/LocalVariableExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/LocalVariableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/RegOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/code/Rops.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstBoolean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstByte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstChar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstDouble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstEnumRef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstFloat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstInterfaceMethodRef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstKnownNull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstLiteral64.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstLong.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/CstShort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/rop/cst/Zeroes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/BasicRegisterMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/ConstCollector$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/ConstCollector$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/ConstCollector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/DeadCodeRemover$NoSideEffectVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/DeadCodeRemover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/DomFront$DomInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/DomFront.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Dominators$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Dominators$DFSInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Dominators$DfsWalker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Dominators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis$EscapeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis$EscapeState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/EscapeAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/InterferenceRegisterMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/LiteralOpUpgrader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/LiteralOpUpgrader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/LocalVariableExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/LocalVariableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/MoveParamCombiner$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/MoveParamCombiner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/MoveParamCombiner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Optimizer$OptionalStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/Optimizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/PhiTypeResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SCCP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SetFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaRenamer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaRenamer$BlockRenamer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaRenamer$BlockRenamer$RenamingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaRenamer$BlockRenamer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/SsaRenamer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$Alignment$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$Alignment$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$Alignment$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$Alignment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator$Multiset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/FirstFitLocalCombiningAllocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/IdenticalBlockCombiner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/LivenessAnalyzer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/LivenessAnalyzer$NextFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/LivenessAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/SsaToRop$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/SsaToRop$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/SsaToRop$PhiVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/ssa/back/SsaToRop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/BitIntSet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/BitIntSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/Bits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/Hex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/HexParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/ListIntSet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/ListIntSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/MutabilityException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/TwoColumnOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/Warning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/dx/util/Writers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ArchivePathElement$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ArchivePathElement$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ArchivePathElement$DirectoryEntryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ArchivePathElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ClassPathElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/ClassReferenceListBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/FolderPathElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/MainDexListBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/android/multidex/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/App$MODE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/AppHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/AccessFlags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/Hash$ByteArrayComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/HashCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/HashImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hash/IHash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/HashTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/HashUtils$NodeComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/HashUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/TreeConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/clazz/DefaultClassNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/clazz/IClassNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/method/IMethodNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/pckg/DefaultPackageNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/comp/pckg/IPackageNodeComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/node/ClassNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/node/MethodNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/node/MethodNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/hashtree/node/PackageNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/pkg/PackageUtils$RELATIONSHIP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/pkg/PackageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/OPTIONS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/Utils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/Utils$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/Utils$IPredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/WalaUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imcczy/utils/WalaUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.dex" beforeDir="false" afterPath="$PROJECT_DIR$/test.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/util/AndroidAnalysisScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/util/AndroidAnalysisScope.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/com.ibm.wala.dalvik/target/" />
@@ -13,8 +338,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/../dexlib2">
@@ -30,11 +354,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+            <state relative-caret-position="820">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,73 +367,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/DexFileFactory.java">
+        <entry file="file://$PROJECT_DIR$/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="292" column="26" selection-start-line="292" selection-start-column="26" selection-end-line="292" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/writer/pool/DexPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/merge/DexMerger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="1193" selection-start-line="1193" selection-end-line="1193" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5848#5849#0" expanded="true" />
-                <element signature="e#5889#5890#0" expanded="true" />
-                <element signature="e#5962#5963#0" expanded="true" />
-                <element signature="e#5992#5993#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/iface/DexFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="63" column="108" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="108" />
+            <state relative-caret-position="131">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/dexbacked/ZipDexContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/HashTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2100">
+              <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/IMethodNodeComp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -133,6 +466,9 @@
       <find>write</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -154,7 +490,6 @@
         <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexIMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/TreeConfig.java" />
-        <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/util/AndroidAnalysisScope.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imcczy/ApkFactory.java" />
         <option value="$PROJECT_DIR$/../com.ibm.wala.core/src/com/ibm/wala/ipa/cha/IClassHierarchy.java" />
         <option value="$PROJECT_DIR$/../com.ibm.wala.core/src/com/ibm/wala/ipa/cha/ClassHierarchy.java" />
@@ -163,20 +498,21 @@
         <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/WDexClassLoaderImpl.java" />
         <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexIClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imcczy/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java" />
-        <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/dex/util/Unsigned.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/android/dx/dex/Annotation.java" />
         <option value="$PROJECT_DIR$/../dexlib2/build.gradle" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/android/dx/merge/DexMerger.java" />
         <option value="$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/writer/pool/DexPool.java" />
         <option value="$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/DexFileFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java" />
+        <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/util/AndroidAnalysisScope.java" />
+        <option value="$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imcczy/App.java" />
+        <option value="$PROJECT_DIR$/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -199,11 +535,14 @@
     <option name="width" value="1392" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,22 +552,42 @@
             </path>
             <path>
               <item name="DexDiff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com.ibm.wala" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="com.ibm.wala.dalvik" type="462c0819:PsiDirectoryNode" />
+              <item name="DexDiff" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DexDiff" type="b2602c69:ProjectViewProjectNode" />
               <item name="DexDiff" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DexDiff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DexDiff" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DexDiff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DexDiff" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DexDiff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DexDiff" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549250860281" />
@@ -357,6 +716,9 @@
       <workItem from="1555053209988" duration="314000" />
       <workItem from="1555053953856" duration="890000" />
       <workItem from="1558793655033" duration="11721000" />
+      <workItem from="1558839919253" duration="678000" />
+      <workItem from="1558841895715" duration="7079000" />
+      <workItem from="1558851150303" duration="168000" />
     </task>
     <servers />
   </component>
@@ -384,20 +746,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44585000" />
+    <option name="totallyTimeSpent" value="52510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.27333334" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25111112" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32880434" />
@@ -405,13 +765,13 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.510828" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.5974522" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.41910827" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.6076433" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32738853" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.3299363" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -422,6 +782,7 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="right" id="Gradle" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,94 +792,46 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/HashTree.java</url>
-          <line>127</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/imcczy/App.java</url>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/imcczy/App.java</url>
-          <line>50</line>
+          <condition expression="m.getSignature().equals(&quot;com.alipay.zoloz.toyger.workspace.ToygerActivity.onCreate(Landroid/os/Bundle;)V&quot;)" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>m.getSignature().equals(&quot;com.alipay.zoloz.toyger.workspace.ToygerActivity.onCreate(Landroid/os/Bundle;)V&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>m.getSignature().contains(&quot;generateBisBehavTask&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>m.getSignature().equals(&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>k.equals(&quot;com.alipay.zoloz.toyger.workspace.task.CherryCaptureTask.generateBisBehavTask()V&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imcczy/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.core/src/com/ibm/wala/classLoader/BytecodeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#5083#5084#0" expanded="true" />
-            <element signature="e#5126#5127#0" expanded="true" />
-            <element signature="e#5167#5168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.core/src/com/ibm/wala/types/TypeReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="508" selection-start-line="508" selection-end-line="508" />
-          <folding>
-            <element signature="e#21740#21741#0" expanded="true" />
-            <element signature="e#21849#21850#0" expanded="true" />
-            <element signature="e#21870#21871#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexModuleEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="44" />
-          <folding>
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexIClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
-          <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.core/src/com/ibm/wala/ipa/cha/IClassHierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1880">
-          <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/wala/com.ibm.wala.dalvik/1.5.1/com.ibm.wala.dalvik-1.5.1.jar!/com/ibm/wala/dalvik/classLoader/DexModuleEntry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -580,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/HashTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/PackageNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-301">
@@ -606,31 +909,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dexmethoddiff.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#2170#2171#0" expanded="true" />
-            <element signature="e#2197#2198#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/pkg/PackageUtils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -698,22 +976,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/dex/util/Unsigned.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/dex/Annotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <folding>
-            <element signature="e#0#1944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/dex/util/Unsigned.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/dex/Annotation.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dex/Annotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -735,20 +999,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../dexlib2/src/main/java/org/jf/dexlib2/builder/instruction/BuilderInstruction21c.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dexlib2/src/main/java/org/jf/dexlib2/dexbacked/raw/util/DexAnnotator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2241">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../dexlib2/src/main/java/org/jf/dexlib2/builder/instruction/BuilderInstruction21c.java" />
+    <entry file="file://$PROJECT_DIR$/../dexlib2/src/main/java/org/jf/dexlib2/dexbacked/raw/util/DexAnnotator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dex/Dex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -763,24 +1015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/iface/ClassDef.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2232">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/iface/DexFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -805,23 +1043,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java">
+    <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/iface/DexFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5848#5849#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5962#5963#0" expanded="true" />
-            <element signature="e#5992#5993#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/android/dx/merge/DexMerger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="3328">
           <caret line="1193" selection-start-line="1193" selection-end-line="1193" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -829,39 +1060,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java">
+    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexIClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="63" column="108" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="108" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="189" column="11" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/writer/pool/DexPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="201">
+          <caret line="110" column="54" lean-forward="true" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/HashUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/DexFileFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="292" column="26" selection-start-line="292" selection-start-column="26" selection-end-line="292" selection-end-column="26" />
+        <state relative-caret-position="106">
+          <caret line="285" column="52" lean-forward="true" selection-start-line="285" selection-start-column="52" selection-end-line="285" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/util/AndroidAnalysisScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="88" column="118" selection-start-line="88" selection-start-column="118" selection-end-line="88" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/utils/OPTIONS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../com.ibm.wala.dalvik/src/com/ibm/wala/dalvik/classLoader/DexFileModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="168" column="13" lean-forward="true" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6056#6057#0" expanded="true" />
+            <element signature="e#6179#6180#0" expanded="true" />
+            <element signature="e#6383#6384#0" expanded="true" />
+            <element signature="e#6457#6458#0" expanded="true" />
+            <element signature="e#6487#6488#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+        <state relative-caret-position="820">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dexlib2/src/org/jf/dexlib2/dexbacked/ZipDexContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/HashTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/IMethodNodeComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/node/MethodNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/hashtree/comp/method/SignatureMethodNodeComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imcczy/AppHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
