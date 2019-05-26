@@ -1,0 +1,6 @@
+.idea
+target
+out
+*.dex
+.DS_Store
+test-out
