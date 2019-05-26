@@ -3,8 +3,8 @@
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html.
- * 
- * This file is a derivative of code released under the terms listed below.  
+ *
+ * This file is a derivative of code released under the terms listed below.
  *
  */
 /*
@@ -53,8 +53,10 @@ import java.nio.file.Files;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.jar.JarFile;
 
+import com.sun.istack.internal.Nullable;
 import org.jf.dexlib2.DexFileFactory;
 import org.jf.dexlib2.Opcodes;
 import org.jf.dexlib2.iface.ClassDef;
@@ -88,7 +90,7 @@ public class DexFileModule implements Module {
     		return new DexFileModule(f, apiLevel);
     	}
     }
-    
+
     private static File tf(JarFile f) throws IOException {
     	String name = f.getName();
     	if (name.indexOf('/') >= 0) {
@@ -99,8 +101,8 @@ public class DexFileModule implements Module {
     	System.err.println("using " + tf);
     	return tf;
     }
-    
-    private DexFileModule(JarFile f) throws IllegalArgumentException, IOException {    	
+
+    private DexFileModule(JarFile f) throws IllegalArgumentException, IOException {
     	this(TemporaryFile.streamToFile(tf(f), f.getInputStream(f.getEntry("classes.dex"))));
     }
 
@@ -129,6 +131,20 @@ public class DexFileModule implements Module {
         }
     }
 
+    private  boolean isTarget(String name, List<String> filters){
+        if (filters == null){
+            return true;
+        }
+        boolean flag = false;
+        for (String t :filters){
+            if (name.startsWith(t)){
+                flag = true;
+                break;
+            }
+        }
+        return flag;
+    }
+
     /**
      * @param f
      *            the .oat or .apk file
@@ -137,7 +153,7 @@ public class DexFileModule implements Module {
      * @param apiLevel
      *            the api level wanted
      */
-    public DexFileModule(File f, String entry, int apiLevel) throws IllegalArgumentException {
+    public DexFileModule(File f, String entry, int apiLevel, @Nullable List<String> filters) throws IllegalArgumentException {
         try {
             this.f = f;
             dexfile = DexFileFactory.loadDexEntry(f, entry,true, apiLevel == AUTO_INFER_API_LEVEL? null : Opcodes.forApi(apiLevel));
@@ -148,12 +164,14 @@ public class DexFileModule implements Module {
         // create ModuleEntries from ClassDefItem
         entries = new HashSet<>();
         for (ClassDef cdefitems : dexfile.getClasses()) {
-            entries.add(new DexModuleEntry(cdefitems, this));
+            if (isTarget(cdefitems.getType(),filters)){
+                entries.add(new DexModuleEntry(cdefitems, this));
+            }
         }
     }
 
     public DexFileModule(File f, String entry) throws IllegalArgumentException {
-        this(f, entry, AUTO_INFER_API_LEVEL);
+        this(f, entry, AUTO_INFER_API_LEVEL,null);
     }
 
     /**

@@ -86,7 +86,7 @@ public class AndroidAnalysisScope {
 			MultiDexContainer<? extends DexBackedDexFile> multiDex = DexFileFactory.loadDexContainer(codeFile, apiLevel == DexFileModule.AUTO_INFER_API_LEVEL ? null : Opcodes.forApi(apiLevel));
 
 			for (String dexEntry : multiDex.getDexEntryNames()) {
-				scope.addToScope(ClassLoaderReference.Application, new DexFileModule(codeFile, dexEntry, apiLevel));
+				scope.addToScope(ClassLoaderReference.Application, new DexFileModule(codeFile, dexEntry, apiLevel,null));
 			}
 		} else {
 			scope.addToScope(ClassLoaderReference.Application, DexFileModule.make(codeFile, apiLevel));

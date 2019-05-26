@@ -9,6 +9,8 @@ import com.ibm.wala.types.ClassLoaderReference;
 import com.imcczy.hashtree.HashTree;
 import com.imcczy.hashtree.node.MethodNode;
 import com.imcczy.utils.OPTIONS;
+import info.debatty.java.stringsimilarity.JaroWinkler;
+import info.debatty.java.stringsimilarity.Levenshtein;
 import org.jf.dexlib2.DexFileFactory;
 import org.jf.dexlib2.Opcodes;
 import org.jf.dexlib2.dexbacked.DexBackedDexFile;
@@ -126,6 +128,8 @@ public class AppHandler {
     }
 
     public void diff() {
+        JaroWinkler jw = new JaroWinkler();
+
         Double[] count = {0.0};
         Map<String, MethodNode> s,l;
         if (newTree.methodNodeMap.size() > oldTree.methodNodeMap.size()){
@@ -141,13 +145,16 @@ public class AppHandler {
                     count[0]++;
                 }else {
                     System.out.println("sig not equal: "+k);
+                    if (jw.similarity(n.opCodes, l.get(k).opCodes) > 0.8){
+                        count[0]++;
+                    }
                 }
             }else {
                 System.out.println("not found sig: "+k);
             }
         });
 
-        System.out.println(count[0]/newTree.methodNodeMap.size());
+        System.out.println(count[0]/s.size());
     }
 
 }
